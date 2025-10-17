@@ -15,6 +15,7 @@ dependencies = [
     "statsmodels>=0.14.0",
     "matplotlib>=3.7.1",
     "seaborn>=0.12.2",
+    "logging>=0.5.1",
 ]
 
 [tool.setuptools.packages.find]

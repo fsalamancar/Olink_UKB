@@ -1,6 +1,6 @@
 import os
 from covariableSelection.data.load import load_tsv
-from covariableSelection.data.preprocesing import select_first_cohort
+from covariableSelection.data.preprocesing import select_first_cohort, eliminate_duplicates
 
 # Ruta del archivo actual (scripts/ibd/phenotype.py)
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -13,13 +13,9 @@ output_path = os.path.join(PROJECT_ROOT, "data/processed/phenotype/")
 
 
 def preprocess_phenotype_data():
-
     phenotype_df = load_tsv(input_path, "phenotype_data.tsv")
-    print("Raw data", phenotype_df.shape)
-
     phenotype_df = select_first_cohort(phenotype_df)
-    print("First cohort selected", phenotype_df.shape)
-
+    phenotype_df = eliminate_duplicates(phenotype_df)
     return phenotype_df
 
 
