@@ -56,7 +56,7 @@ Olink_UKB/
 │       └── renameColums.py            # Column renaming utilities
 │
 ├── data/                              # Data storage directory
-│   ├── row/                           # Raw data files
+│   ├── raw/                           # Raw data files
 │   ├── preprocessing/                 # Preprocessed data
 │   └── outputs/                       # Generated outputs and results
 │

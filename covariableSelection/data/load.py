@@ -1,7 +1,7 @@
 import pandas as pd
 import os
 
-def load_tsv(filename, path, **kwargs):
+def load_tsv(path, filename, **kwargs):
     """
     Load a TSV file with flexible read_csv parameters.
     """
@@ -22,7 +22,7 @@ def load_tsv(filename, path, **kwargs):
         print("Unexpected error while loading the file.")
         raise e
 
-def load_csv(filename, path, **kwargs):
+def load_csv(path, filename, **kwargs):
     """
     Load a TSV file with flexible read_csv parameters.
     """
