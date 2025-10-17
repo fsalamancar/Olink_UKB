@@ -1,1 +1,49 @@
-cc
+# VsCode
+.vscode/
+
+# MacOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+env/
+venv/
+.venv/
+pip-wheel-metadata/
+*.egg-info/
+dist/
+build/
+
+# Jupyter
+.ipynb_checkpoints
+
+# R
+.Rhistory
+.RData
+.Rproj.user
+.Ruserdata
+
+# Data and results (adjust if you keep data in repo)
+*.rds
+*.rda
+*.csv
+*.tsv
+
+# IDEs and editors
+.idea/
+*.sublime-workspace
+*.sublime-project
+*.swp
+*~
+
+# OS
+Thumbs.db
+ehthumbs.db
+
+# Logs & coverage
+*.log
+.coverage
+htmlcov/

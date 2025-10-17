@@ -1,0 +1,17 @@
+[project]
+name = "covariableSelection"
+version = "0.1.0"
+description = "This is the first version of the covariable selection tool to IBD disease using the UK Biobank dataset. This project aims to provide methods for selecting relevant covariates using machine learning techniques."
+authors = [{name="Angie G. Pineda", email="agpinedam@unal.edu.co"}, {name="Francisco J. Salamanca", email="fsalamancar@unal.edu.co"}]
+requires-python = ">=3.13"
+
+[project.dependencies]
+pandas = ">=2.0.3"
+numpy = ">=1.24.3"
+scikit-learn = ">=1.2.2"
+statsmodels = ">=0.14.0"
+matplotlib = ">=3.7.1"
+seaborn = ">=0.12.2"
+os = "*"
+re = "*"
+collections = "*"
